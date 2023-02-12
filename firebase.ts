@@ -3,16 +3,16 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB9dQqStltrwymJrQQtX2IQzpQRLA-sVlQ",
-  authDomain: "chartgpt-messenger.firebaseapp.com",
-  projectId: "chartgpt-messenger",
-  storageBucket: "chartgpt-messenger.appspot.com",
-  messagingSenderId: "418511244986",
-  appId: "1:418511244986:web:c430fa23d3a4bedf1e7c83",
+  apiKey: "AIzaSyAbbp-QlHLHuLDzjxpYQLtNyjXi8Ylqumc",
+  authDomain: "chartgpt-clone.firebaseapp.com",
+  projectId: "chartgpt-clone",
+  storageBucket: "chartgpt-clone.appspot.com",
+  messagingSenderId: "629559910623",
+  appId: "1:629559910623:web:38b5c114181ad73dbb896a",
 };
 
 // Initialize Firebase
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig, "app1");
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export { db };

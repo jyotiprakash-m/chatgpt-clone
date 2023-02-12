@@ -6,12 +6,9 @@ const serviceAccount = JSON.parse(
 );
 
 if (!getApps.length) {
-  admin.initializeApp(
-    {
-      credential: admin.credential.cert(serviceAccount),
-    },
-    "app2"
-  );
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
 }
 
 const adminDb = admin.firestore();
