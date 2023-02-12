@@ -21,7 +21,7 @@ const ModelSelection = () => {
         classNames={{
           control: (state) => "bg-[#434654] border-[#434654] border-[#434654]",
         }}
-        onChange={(e) => setModel(e.value)}
+        onChange={(e: any) => setModel(e.value)}
       />
     </div>
   );
